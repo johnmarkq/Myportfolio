@@ -295,25 +295,25 @@ const Portfolio = () => {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-100">SaaS</span>
-                    <span className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold border border-slate-200">2023</span>
+                      {/* <span className="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-100">SaaS</span>
+                      <span className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold border border-slate-200">2023</span> */}
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">Analytics Dashboard</h3>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 ">Ask a Date</h3>
                   <p className="text-slate-600 mb-6 leading-relaxed">
-                    A real-time analytics platform helping e-commerce businesses track metrics. Features include data visualization with D3.js and automated reporting.
+                    This image appears to be a screenshot from a very simple, direct, and playfully romantic mobile application or web page designed for asking one specific person out on a date.
                   </p>
                   <ul className="flex flex-wrap gap-2 mb-8">
-                    {['Next.js', 'TypeScript', 'Supabase'].map((tech) => (
+                    {["HTMl","Javascript"].map((tech) => (
                       <li key={tech} className="text-xs font-medium text-slate-600 bg-white border border-slate-200 px-2.5 py-1 rounded shadow-sm">
                         {tech}
                       </li>
                     ))}
                   </ul>
                   <div className="flex gap-4">
-                    <a href="#" className="text-slate-900 hover:text-blue-600 transition-colors flex items-center gap-2 text-sm font-bold">
+                    <a href="https://askdate.netlify.app/" className="text-slate-900 hover:text-blue-600 transition-colors flex items-center gap-2 text-sm font-bold" target='_blank'>
                       <ExternalLink size={16} /> Live Demo
                     </a>
-                    <a href="#" className="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-2 text-sm font-bold">
+                    <a href="https://github.com/johnmarkq/project-1" className="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-2 text-sm font-bold" target='_blank'>
                       <Github size={16} /> Code
                     </a>
                   </div>
