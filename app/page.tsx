@@ -284,7 +284,7 @@ const Portfolio = () => {
               <h2 className="text-2xl font-bold text-slate-900 mb-2">Selected Projects</h2>
               <p className="text-slate-600">Recent projects shipped to production.</p>
             </div>
-            <a href="#" className="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 transition-colors">
+            <a href="https://github.com/johnmarkq" className="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 transition-colors">
               View GitHub <ArrowRight size={16} />
             </a>
           </div>
