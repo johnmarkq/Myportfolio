@@ -219,7 +219,7 @@ const Portfolio = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-slate-900">Frontend Architecture</h3>
-                  <p className="text-sm text-slate-600 mt-1">Specialized in React, Next.js ecosystem, and state management.</p>
+                  <p className="text-sm text-slate-600 mt-1">Specialized in React/Next.js ecosystem</p>
                 </div>
               </div>
             </div>
@@ -335,38 +335,53 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-
-            {/* Project 2 - Updated Description and removed buttons */}
-            <div className={`bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-2xl p-8 md:p-10 ${revealClass} delay-100 group hover:border-purple-500/30 hover:shadow-xl`}>
+            {/* Project 2 */}
+            <div className={`bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-2xl p-8 md:p-10 ${revealClass} group hover:border-blue-500/30 hover:shadow-xl`}>
               <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="order-2 md:order-1 relative aspect-video rounded-xl overflow-hidden bg-slate-50 border border-slate-200 shadow-sm group-hover:shadow-md transition-all">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-2/3 h-2/3 bg-white rounded-xl border border-slate-200 shadow-xl flex items-center justify-center">
-                      <div className="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center text-purple-600">
-                        <Terminal size={32} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="order-1 md:order-2">
+                <div>
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="px-2.5 py-1 rounded-md bg-purple-50 text-purple-700 text-xs font-semibold border border-purple-100">AI Tool</span>
-                    <span className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold border border-slate-200">2023</span>
+                      {/* <span className="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-100">SaaS</span>
+                      <span className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold border border-slate-200">2023</span> */}
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">AI Chat Assistant</h3>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 ">Cpu Scheduling</h3>
                   <p className="text-slate-600 mb-6 leading-relaxed">
-                    An intelligent conversational agent built with OpenAI's powerful language models. Features natural language understanding, context retention for multi-turn conversations, and a sleek, user-friendly interface for seamless interaction.
+                    CPU scheduling is the mechanism an operating system uses to determine which active process gets to execute on the processor at any specific moment. Its primary goal is to maximize system efficiency and fairness by organizing the execution order of tasks using algorithms like Round Robin or First-Come, First-Served.
                   </p>
                   <ul className="flex flex-wrap gap-2 mb-8">
-                    {['React', 'Node.js', 'OpenAI API'].map((tech) => (
+                    {["HTMl","Javascript"].map((tech) => (
                       <li key={tech} className="text-xs font-medium text-slate-600 bg-white border border-slate-200 px-2.5 py-1 rounded shadow-sm">
                         {tech}
                       </li>
                     ))}
                   </ul>
+                  <div className="flex gap-4">
+                    <a href="https://cpuscheduling-plum.vercel.app/" className="text-slate-900 hover:text-blue-600 transition-colors flex items-center gap-2 text-sm font-bold" target='_blank'>
+                      <ExternalLink size={16} /> Live Demo
+                    </a>
+                    <a href="https://github.com/johnmarkq/cpuscheduling" className="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-2 text-sm font-bold" target='_blank'>
+                      <Github size={16} /> Code
+                    </a>
+                  </div>
+                </div>
+                <div className="relative aspect-video rounded-xl overflow-hidden bg-slate-50 border border-slate-200 shadow-sm group-hover:shadow-md transition-all">
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <div className="w-full h-full bg-white rounded-lg border border-slate-200 shadow-xl p-4 flex flex-col">
+                      <div className="flex gap-2 mb-4 border-b border-slate-100 pb-2">
+                        <div className="w-2.5 h-2.5 rounded-full bg-slate-300"></div>
+                        <div className="w-2.5 h-2.5 rounded-full bg-slate-300"></div>
+                      </div>
+                      <div className="grid grid-cols-2 gap-4 flex-1">
+                        <div className="bg-blue-50 rounded border border-blue-100"></div>
+                        <div className="bg-slate-50 rounded border border-slate-100"></div>
+                        <div className="col-span-2 bg-slate-50 rounded border border-slate-100 h-1/2"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div>        
+            
+            
           </div>
         </div>
       </section>
@@ -379,7 +394,7 @@ const Portfolio = () => {
             I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
           <a 
-            href="mailto:hello@example.com" 
+            href="mailto:gulbejohnmark@gmail.com" 
             className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-slate-900 text-white font-bold hover:bg-slate-800 transition-all hover:scale-105 shadow-xl shadow-slate-900/10"
           >
             Say Hello <ArrowRight size={16} className="ml-2" />
@@ -392,7 +407,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-slate-500 font-medium">&copy; 2023 Johnmark Gulbe. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors"><Github size={20} /></a>
+            <a href="https://github.com/johnmarkq" className="text-slate-400 hover:text-blue-600 transition-colors" target='_blank'><Github size={20} /></a>
             <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors"><Linkedin size={20} /></a>
             <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors"><Twitter size={20} /></a>
           </div>
