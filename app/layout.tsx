@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Johnmark Gulbe || FullStack Scammer/Hacker",
+  title: "Johnmark Gulbe || Full stack gwapo ",
 };      
 
 export default function RootLayout({
